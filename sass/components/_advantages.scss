@@ -1,0 +1,81 @@
+.advantages {
+    @extend %section;
+    padding-bottom: 0;
+
+    font-size: 14px;
+        
+
+    &__title {
+        color: $title-text-color;
+    }
+
+    &__list {
+        @extend %list;
+        display: block;
+    }
+
+    &__item {
+        // width: 270px;
+        padding-bottom: 30px;
+    }
+
+    &__icon-wrapper {
+        display: flex;
+        align-items: center;
+        height: 120px;
+        margin-bottom: 30px;
+
+        background: $btn-filter-bg-color;
+    }
+
+    &__icon {
+        margin: auto;
+    }
+
+    &__secondary-title {
+        margin-bottom: 10px;
+
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        text-align: center;
+
+        color: $title-text-color;
+    }
+
+    &__description {
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    } 
+
+
+    @include respond-to(medium) {
+
+        &__secondary-title {
+            text-align: left;
+        }    
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            flex-basis: calc(100% / 2 - 30px);
+            margin-left: 30px;
+        }
+
+    }
+
+
+    @include respond-to(large) {
+         &__item {
+            flex-basis: calc(100% / 4 - 30px);
+            margin-left: 30px;
+        }    
+    }
+
+}

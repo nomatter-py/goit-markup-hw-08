@@ -1,0 +1,37 @@
+.footer {
+    padding: 60px 0;
+
+    background-color: $footer-bg-color;
+
+    &__logo {
+        display: inline-block;
+        margin-bottom: 20px;
+        color: $primary-white-color;
+    }
+
+    &__subscription {
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    @include respond-to (medium) {
+        &__top-wrapper {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+     @include respond-to (large) {
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__subscription {
+            padding-top: 12px;
+            text-align: left;
+        }
+     }
+
+}

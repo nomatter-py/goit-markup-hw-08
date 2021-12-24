@@ -1,0 +1,25 @@
+.address {
+    color: $primary-white-color;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    &__list {
+        @extend %list;
+    }
+
+    &__link {
+        @extend %link;
+        color: inherit;
+        opacity: 0.6;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+
+}

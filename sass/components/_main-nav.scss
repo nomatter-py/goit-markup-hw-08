@@ -1,0 +1,50 @@
+.main-nav {
+
+    display: none;
+    margin-left: 93px;
+
+    &__list {
+        @extend %list;
+
+        display: flex;
+    }
+
+    &__link {
+        @extend %link;
+
+        position: relative;
+        padding: 32px 0;    
+
+        @extend %page-nav-text;
+        color: $title-text-color;
+        transition: color $transition-tmting $transition-cubic;
+
+        &--current::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+                
+            width: 100%;
+            height: 4px;
+
+            border-radius: 2px;
+            background: $accent-color;
+        }
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;         
+    }
+
+}

@@ -1,0 +1,8 @@
+.address-wrapper {
+    text-align: center;
+
+    @include respond-to (large) {
+        text-align: left;
+    }
+
+}

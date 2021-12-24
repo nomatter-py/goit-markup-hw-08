@@ -1,0 +1,25 @@
+.team {
+    @extend %section;
+    background-color: $secondary-bg-color;
+
+    &__title {
+        @extend %section-title;
+        // margin-bottom: 50px;
+    }
+
+    &__list {
+        @extend %list;
+    }
+
+    @include respond-to (medium) {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -30px;
+            margin-bottom: -30px;
+        }
+    }
+
+  
+
+}

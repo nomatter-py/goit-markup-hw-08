@@ -1,0 +1,34 @@
+.mobile-social-list {
+
+    @extend %list;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: calc(22/18);
+    letter-spacing: 0.02em;
+    text-align: left;
+
+    color: $accent-color;
+
+    &__item {
+        margin-bottom: 10px;
+    }
+
+    &__item + &__item {
+        padding-left: 10px;
+    }
+
+    &__item:not(:last-child) {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2); 
+    }
+
+    &__link{
+        @extend %link;
+    }
+
+}

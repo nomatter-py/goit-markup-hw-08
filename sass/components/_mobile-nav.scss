@@ -1,0 +1,62 @@
+.mobile-nav {
+   
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: calc(47/40);
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+
+
+    &__list {
+        @extend %list;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &__link {
+        @extend %link;
+        transition: color $transition-tmting $transition-cubic;
+
+        &--current{
+            color: $accent-color;
+        }
+    }
+
+    &__link:hover {
+        color: $accent-color;
+    }
+
+}
+
+
+.mobile-contacts-list {
+
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: calc(28/24);
+    letter-spacing: 0.02em;
+
+    &__link {
+        @extend %link;
+    }
+    
+    &__item:first-child &__link {
+
+        margin-bottom: 32px;
+
+        font-size: 34px;
+        line-height: calc(40/34);
+
+        color: $accent-color;
+
+    }
+
+    &__item:last-child {
+        margin-bottom: 64px;
+    }
+
+}

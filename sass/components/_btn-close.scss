@@ -1,0 +1,26 @@
+.btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: inline-block;
+    align-items: center;
+    border: unset;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 1px solid #0000001A;
+
+    &__icon {
+        margin-left: 1px;
+        fill: #000000;
+        transition: fill $transition-tmting $transition-cubic;
+    }
+
+    &:hover &__icon{
+        fill: $accent-color;
+    }
+
+}

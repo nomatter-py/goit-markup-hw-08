@@ -1,0 +1,82 @@
+.clients {
+
+    @extend %section;
+
+    &__title {
+        @extend %section-title;
+    }
+
+    &__list {
+        @extend %list;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+
+    &__icon {
+        width:106px;
+        height: 60px;
+
+        fill: currentColor;
+    }
+
+    &__link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;//210px;
+        height: 92px;
+        color: $icon-color;
+
+        background-repeat: no-repeat;
+        background-position: center;
+
+        transition: fill $transition-tmting $transition-cubic, 
+                    border-color $transition-tmting $transition-cubic,
+                    color $transition-tmting $transition-cubic;
+
+        border: 1px solid $icon-color;
+        border-radius: 4px;     
+    }
+
+    &__link:hover,
+    &__link:focus {
+        border-color: $accent-color;
+        color: $accent-color;
+        fill: $accent-color;
+    }
+
+    @include respond-to (small) {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+         &__item {
+            flex-basis: calc(100%/2 - 30px);
+            margin: 15px;
+        }
+    }
+
+
+     @include respond-to (medium) {
+         &__item {
+            flex-basis: calc(100%/3 - 30px);
+            margin: 15px;
+        } 
+    }
+
+    @include respond-to (large) {
+        &__list {
+            flex-wrap: nowrap;
+        }
+    }
+
+}

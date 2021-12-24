@@ -1,0 +1,33 @@
+.portfolio {
+    @extend %section;
+
+    &__filter {
+        @extend %list;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    &__filter-item:not(:last-child) {
+        margin-right: 8px;
+        margin-bottom: 15px;
+    }
+
+    &__list {
+        @extend %list;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include respond-to (medium) {
+        &__filter {
+            justify-content: center;
+            margin-bottom: 50px;
+        } 
+        
+        &__list {
+            margin: -15px;
+        }
+    }
+
+}

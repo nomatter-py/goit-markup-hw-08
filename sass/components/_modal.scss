@@ -1,0 +1,55 @@
+.modal {
+    
+    position: absolute;
+    top:5%;
+    left: 50%;
+    transform: translate(-50%);
+   
+
+    
+    padding: 40px 40px 0;
+
+   
+    width: 90%;
+    max-width: 450px;
+
+    // min-width: 528px;
+    // min-height: 500px;
+    
+    transition: transform $transition-tmting $transition-cubic;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    &__title {
+        margin-bottom: 12px;
+
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: $title-text-color;
+
+    }
+
+
+    @include respond-to(medium) {
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @include respond-to(large) {
+        max-width: 528px;
+
+        &__title {
+            line-height: 1.15;
+        }
+    }
+
+
+}

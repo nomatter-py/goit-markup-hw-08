@@ -1,0 +1,42 @@
+// * config
+@import './config/config';
+
+// * utils
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/extras';
+@import './utils/placeholders';
+
+
+// * base styles
+@import './base/base';
+
+// * components
+@import './components/container';
+@import './components/button';
+@import './components/page-header';
+@import './components/logo';
+@import './components/main-nav';
+@import './components/contacts-list';
+@import './components/hero';
+@import './components/advantages';
+@import './components/about';
+@import './components/social-list';
+@import './components/team-card';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
+@import './components/address-wrapper';
+@import './components/address';
+@import './components/footer-social';
+@import './components/subscription-form';
+@import './components/backdrop';
+@import './components/btn-close';
+@import './components/modal';
+@import './components/form-order';
+@import './components/button-filter';
+@import './components/portfolio';
+@import './components/portfolio-card';
+@import './components/mobile-menu';
+@import './components/mobile-nav';
+@import './components/mobile-social-list';

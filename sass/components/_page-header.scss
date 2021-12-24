@@ -1,0 +1,41 @@
+.page-header {
+    border: 1px solid $secondary-bg-color;
+
+    &__container {
+        display: flex;
+        height: 80px;
+        align-items: center;
+    }
+
+    &__menu-icon {
+        margin-left:auto;
+    }
+
+    &__menu-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        min-width: 40px;
+        min-height: 40px;
+        background-color: transparent;
+    }
+
+    &__menu-button:hover {
+        cursor: pointer;
+    }
+
+     &__menu-button:hover &__menu-icon {
+        fill: $accent-color;
+    }
+
+    @media screen and (min-width: 767px) {
+        &__menu-button{
+            display: none; 
+        }     
+    }
+
+}
+
+
+
