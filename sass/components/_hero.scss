@@ -11,7 +11,7 @@
             rgba(47, 48, 58, 0.4), 
             rgba(47, 48, 58, 0.4)
             ),
-            url("../../images/hero-image-mobile-1x.jpg") ;
+            url("./../images/hero-image-mobile-1x.jpg") ;
 
    
     @media (min-device-pixel-ratio: 2),
@@ -23,7 +23,7 @@
          linear-gradient(
             rgba(47, 48, 58, 0.4), 
             rgba(47, 48, 58, 0.4)
-            ), url("../../images/hero-image-mobile-2x.jpg");    
+            ), url("./../images/hero-image-mobile-2x.jpg");    
     
     }        
    
